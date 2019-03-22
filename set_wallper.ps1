@@ -47,4 +47,4 @@ key.Close();
     [Wallpaper.Setter]::SetWallpaper( $Path, $Style )
 }
  
-Set-Wallpaper -Path "C:\Users\win32\Desktop\moneypc.jpg"
+Set-Wallpaper -Path "%HOMEPATH%\\moneypc.jpg"
