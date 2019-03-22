@@ -46,5 +46,7 @@ key.Close();
  
     [Wallpaper.Setter]::SetWallpaper( $Path, $Style )
 }
- 
-Set-Wallpaper -Path "%HOMEPATH%\\moneypc.jpg"
+$aaa="C:\user\"+(Get-WmiObject -Class Win32_ComputerSystem).username.Split("\")[1]+"\moneypc.jpg";
+echo $aaa;
+Set-Wallpaper -Path $aaa;
+
